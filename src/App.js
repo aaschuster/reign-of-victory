@@ -3,7 +3,7 @@ import './styles/App.css';
 import discordLogo from "./discord.png"
 import { IoMdDownload as DownloadIcon } from "react-icons/io";
 
-const downloadlink = "https://e.pcloud.link/publink/show?code=XZrtqKZYWdUeMSbrzYdGnuqyliYYVeYDTQy#returl=https%3A//e.pcloud.link/publink/show%3Fcode%3DXZrtqKZYWdUeMSbrzYdGnuqyliYYVeYDTQy&page=login";
+const downloadlink = "ReignOfVictory-0-0-1.zip";
 const discordLink = "https://discord.gg/Dx872GJW";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         Please provide feedback on the Discord!
       </p>
       <div className="links">
-        <a className="downloadlink" href={downloadlink}>
+        <a download className="downloadlink" href={downloadlink} >
           <div className="downloadlinkdiv">
             <p>Download</p>
             <DownloadIcon className="downloadicon"/>
