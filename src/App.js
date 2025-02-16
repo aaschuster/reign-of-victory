@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+
+import ZohoVerify from "./ZohoVerify";
 
 import './styles/App.css';
 
@@ -17,33 +20,39 @@ function App() {
   }
 
   return (
-    <div>
-      <header>
-        <h1>Reign of Victory</h1>
-      </header>
-      <p>
-        Very early Alpha version of the game "Reign of Victory" released for a premature early access.
-        Please provide feedback on the Discord!
-      </p>
-      <div className="links">
-        <a download className="downloadlink" href={downloadlink} >
-          <div className="downloadlinkdiv">
-            <p>Download</p>
-            <DownloadIcon className="downloadicon"/>
+    <Routes>
+      <Route path="/" exact element={
+        <div>
+          <header>
+            <h1>Reign of Victory</h1>
+          </header>
+          <p>
+            Very early Alpha version of the game "Reign of Victory" released for a premature early access.
+            Please provide feedback on the Discord!
+          </p>
+          <div className="links">
+            <a download className="downloadlink" href={downloadlink} >
+              <div className="downloadlinkdiv">
+                <p>Download</p>
+                <DownloadIcon className="downloadicon"/>
+              </div>
+            </a>
+            <a className="discordlink" href={discordLink}>
+              <div className="discordlinkdiv">
+                <p>Join the Discord!</p>
+                <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
+              </div>
+            </a>
           </div>
-        </a>
-        <a className="discordlink" href={discordLink}>
-          <div className="discordlinkdiv">
-            <p>Join the Discord!</p>
-            <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
-          </div>
-        </a>
-      </div>
-      {/* <form className="emailsignupform">
-        <label>Sign up for email updates:</label>
-        <input onChange={onChange} type="email" value={email}/>
-      </form> */}
-    </div>
+          {/* <form className="emailsignupform">
+            <label>Sign up for email updates:</label>
+            <input onChange={onChange} type="email" value={email}/>
+          </form> */}
+        </div>
+      }/>
+      <Route path="/zohoverify/verifyforzoho.html" element={<ZohoVerify/>}/>
+    </Routes>
+    
   );
 }
 
