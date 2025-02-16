@@ -6,6 +6,6 @@
       }
     ],
     "redirects": [
-      { "source": "zohoverify/verifyforzoho.html", "destination": "/zohoverify/verifyforzoho.html", "permanent": false}
+      { "source": "/zohoverify/verifyforzoho.html", "destination": "/zohoverify/verifyforzoho.html", "permanent": false}
     ]
   }
