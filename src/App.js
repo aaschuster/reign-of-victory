@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import './styles/App.css';
 
 import discordLogo from "./discord.png"
@@ -7,6 +9,13 @@ const downloadlink = "ReignOfVictory-0-0-1.zip";
 const discordLink = "https://discord.gg/Dx872GJW";
 
 function App() {
+
+  const [email, setEmail] = useState("");
+
+  function onChange(evt) {
+    setEmail(evt.target.value);
+  }
+
   return (
     <div>
       <header>
@@ -30,6 +39,10 @@ function App() {
           </div>
         </a>
       </div>
+      {/* <form className="emailsignupform">
+        <label>Sign up for email updates:</label>
+        <input onChange={onChange} type="email" value={email}/>
+      </form> */}
     </div>
   );
 }
