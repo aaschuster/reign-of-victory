@@ -1,0 +1,11 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "redirects": [
+      { "source": "zohoverify/verifyforzoho.html", "destination": "/zohoverify/verifyforzoho.html", "permament": false}
+    ]
+  }
