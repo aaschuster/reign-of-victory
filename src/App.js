@@ -39,10 +39,10 @@ function App() {
           </div>
         </a>
       </div>
-      <form className="emailsignupform">
+      {/* <form className="emailsignupform">
         <label>Sign up for email updates:</label>
         <input onChange={onChange} type="email" value={email}/>
-      </form>
+      </form> */}
     </div>
   );
 }
