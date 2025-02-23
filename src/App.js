@@ -3,8 +3,9 @@ import './styles/App.css';
 import discordLogo from "./discord.png"
 import { IoMdDownload as DownloadIcon } from "react-icons/io";
 
-const downloadlink = "ReignOfVictory-0-0-1.zip";
-const discordLink = "https://discord.gg/Dx872GJW";
+const downloadlink = "ReignOfVictory-0-0-3-InDev.zip";
+
+const discordLink = "https://discord.com/invite/rEWtzeQzNu";
 
 function App() {
   return (
