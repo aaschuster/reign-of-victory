@@ -43,24 +43,33 @@ header h1 {
 .discordlink {
   color: white;
   background-color: black;
+  display: flex;
 }
 
 .discordlinkdiv {
   display: flex;
+  align-items: center;
+  vertical-align: middle;
 }
 
 .downloadlinkdiv {
   display: flex;
+  align-items: center;
+}
+
+.downloadlinktext p {
+  font-size: 0.8rem;
+  margin-top: 5px;
 }
 
 .downloadicon {
-  margin-left: 7px;
-  height: 1.3rem;
+  margin-left: 13px;
+  font-size: 2rem;
 }
 
 .discordlogo {
-  margin-left: 7px;
-  height: 1.3rem;
+  margin-left: 13px;
+  height: 2rem;
 }
 
 .emailsignupform input {
