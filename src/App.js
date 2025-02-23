@@ -29,7 +29,10 @@ function App() {
         <div className="links">
           <a download className="downloadlink" href={downloadlink} >
             <div className="downloadlinkdiv">
-              <p>Download</p>
+              <div className="downloadlinktext">
+                <h3>Download</h3>
+                <p>.zip file - Windows only </p>
+              </div>
               <DownloadIcon className="downloadicon"/>
             </div>
           </a>
