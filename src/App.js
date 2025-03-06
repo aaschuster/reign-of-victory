@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import './styles/App.css';
 
 import discordLogo from "./discord.png"
-import { IoMdDownload as DownloadIcon } from "react-icons/io";
-
-const downloadlink = "ReignOfVictory-0-0-3-InDev.zip";
+import youtubeLogo from "./youtube.png"
+import twitchLogo from "./twitch.png"
 
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
+const youtubeLink = "https://youtu.be/3-b3ALq1IhU";
+const twitchLink = "https://m.twitch.tv/reignofvictorygaming/home?tt_content=channel&tt_medium=mobile_web_share";
 
 function App() {
 
@@ -18,28 +19,33 @@ function App() {
   }
 
   return (
-      <div>
+      <div className="app">
         <header>
           <h1>Reign of Victory</h1>
         </header>
-        <p>
-          Very early Alpha version of the game "Reign of Victory" released for a premature early access.
-          Please provide feedback on the Discord!
-        </p>
         <div className="links">
-          <a download className="downloadlink" href={downloadlink} >
-            <div className="downloadlinkdiv">
-              <div className="downloadlinktext">
-                <h3>Download</h3>
-                <p>.zip file - Windows only </p>
-              </div>
-              <DownloadIcon className="downloadicon"/>
-            </div>
-          </a>
           <a className="discordlink" href={discordLink}>
             <div className="discordlinkdiv">
-              <p>Join the Discord!</p>
               <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
+              <div className="discordtext">
+                <p>Join the Discord!</p>
+              </div>              
+            </div>
+          </a>
+          <a className="youtubelink" href={youtubeLink}>
+            <div className="youtubelinkdiv">
+              <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
+              <div className="youtubetext">
+                <p>Playtest session</p>
+              </div>
+            </div>
+          </a>
+          <a className="twitchlink" href={twitchLink}>
+            <div className="twitchlinkdiv">
+              <img className="twitchlogo" src={twitchLogo} alt="Twitch logo"/>
+              <div className="twitchtext">
+                <p>Twitch</p>
+              </div>
             </div>
           </a>
         </div>
