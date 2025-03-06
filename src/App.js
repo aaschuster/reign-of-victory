@@ -27,19 +27,25 @@ function App() {
           <a className="discordlink" href={discordLink}>
             <div className="discordlinkdiv">
               <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
-              <p>Join the Discord!</p>
+              <div className="discordtext">
+                <p>Join the Discord!</p>
+              </div>              
             </div>
           </a>
           <a className="youtubelink" href={youtubeLink}>
             <div className="youtubelinkdiv">
               <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
-              <p>Playtest session</p>
+              <div className="youtubetext">
+                <p>Playtest session</p>
+              </div>
             </div>
           </a>
           <a className="twitchlink" href={twitchLink}>
             <div className="twitchlinkdiv">
               <img className="twitchlogo" src={twitchLogo} alt="Twitch logo"/>
-              <p>Twitch</p>
+              <div className="twitchtext">
+                <p>Twitch</p>
+              </div>
             </div>
           </a>
         </div>

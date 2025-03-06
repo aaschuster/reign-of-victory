@@ -56,15 +56,15 @@ header h1 {
   display: flex;
   align-items: center;
   vertical-align: middle;
+  width: 100%;
 }
 
 .discordlogo, .youtubelogo, .twitchlogo {
   margin-right: 13px;
 }
 
-.discordlinkdiv p {
+.discordtext, .youtubetext, .twitchtext {
   width: 100%;
-  text-align: center;
 }
 
 .discordlogo {
