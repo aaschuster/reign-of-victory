@@ -7,7 +7,7 @@ import youtubeLogo from "./youtube.png"
 import twitchLogo from "./twitch.png"
 
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
-const youtubeLink = "https://youtu.be/3-b3ALq1IhU";
+const youtubeLink = "https://youtu.be/HMqv-nBUhTA";
 const twitchLink = "https://m.twitch.tv/reignofvictorygaming/home?tt_content=channel&tt_medium=mobile_web_share";
 
 function App() {
