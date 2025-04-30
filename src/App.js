@@ -7,7 +7,7 @@ import youtubeLogo from "./youtube.png"
 import twitchLogo from "./twitch.png"
 
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
-const youtubeLink = "https://youtu.be/HMqv-nBUhTA";
+const youtubeLink = "https://youtu.be/e_8MWue2tCs";
 const twitchLink = "https://m.twitch.tv/reignofvictorygaming/home?tt_content=channel&tt_medium=mobile_web_share";
 
 function App() {
@@ -36,7 +36,7 @@ function App() {
             <div className="youtubelinkdiv">
               <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
               <div className="youtubetext">
-                <p>Playtest session</p>
+                <p>Video tour</p>
               </div>
             </div>
           </a>
