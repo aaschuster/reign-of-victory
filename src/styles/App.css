@@ -44,26 +44,23 @@ header h1 {
   font-size: 1.3rem;
   width: 100%;
   height: 55px;
-}
-
-.discordlink, .youtubelink, .twitchlink {
   color: white;
   background-color: black;
   display: flex;
 }
 
-.discordlinkdiv, .youtubelinkdiv, .twitchlinkdiv {
+.linkdiv {
   display: flex;
   align-items: center;
   vertical-align: middle;
   width: 100%;
 }
 
-.discordlogo, .youtubelogo, .twitchlogo {
+.linkdiv img {
   margin-right: 13px;
 }
 
-.discordtext, .youtubetext, .twitchtext {
+.linkdiv p {
   width: 100%;
 }
 

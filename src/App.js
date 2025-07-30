@@ -9,6 +9,7 @@ import twitchLogo from "./twitch.png"
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
 const youtubeLink = "https://youtu.be/e_8MWue2tCs";
 const twitchLink = "https://m.twitch.tv/reignofvictorygaming/home?tt_content=channel&tt_medium=mobile_web_share";
+const steamLink = "https://store.steampowered.com/app/3890650/Reign_of_Victory/?beta=0";
 
 function App() {
 
@@ -24,28 +25,27 @@ function App() {
           <h1>Reign of Victory</h1>
         </header>
         <div className="links">
+          <a className="steamlink" href={steamLink}>
+            <div className="linkdiv steamlinkdiv">
+                <p>Steam</p>
+            </div>
+          </a>
           <a className="discordlink" href={discordLink}>
-            <div className="discordlinkdiv">
+            <div className="linkdiv discordlinkdiv">
               <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
-              <div className="discordtext">
                 <p>Join the Discord!</p>
-              </div>              
             </div>
           </a>
           <a className="youtubelink" href={youtubeLink}>
-            <div className="youtubelinkdiv">
+            <div className="linkdiv youtubelinkdiv">
               <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
-              <div className="youtubetext">
                 <p>Video tour</p>
-              </div>
             </div>
           </a>
           <a className="twitchlink" href={twitchLink}>
-            <div className="twitchlinkdiv">
+            <div className="linkdiv twitchlinkdiv">
               <img className="twitchlogo" src={twitchLogo} alt="Twitch logo"/>
-              <div className="twitchtext">
                 <p>Twitch</p>
-              </div>
             </div>
           </a>
         </div>
