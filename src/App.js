@@ -25,7 +25,7 @@ function App() {
   }
 
   return (
-      <div className="app">
+      <div className="app" style={{backgroundImage: `url(${banner})`}}>
         <header>
           <img className="king" src={king} alt="Regal King with a golden crown sitting on a large ornate throne"/>
           <img className="wordmark" src={wordmark} alt="Reign of Victory wordmark"/>
