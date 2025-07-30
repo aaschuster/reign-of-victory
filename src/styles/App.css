@@ -76,6 +76,10 @@ header h1 {
   height: 3.2rem;
 }
 
+.steamlogo {
+  height: 3.3rem;
+}
+
 .emailsignupform input {
   margin-left: 5px;
   width: 100%;

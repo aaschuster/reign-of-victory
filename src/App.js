@@ -5,6 +5,7 @@ import './styles/App.css';
 import discordLogo from "./discord.png"
 import youtubeLogo from "./youtube.png"
 import twitchLogo from "./twitch.png"
+import steamLogo from "./steam.png"
 
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
 const youtubeLink = "https://youtu.be/e_8MWue2tCs";
@@ -27,25 +28,26 @@ function App() {
         <div className="links">
           <a className="steamlink" href={steamLink}>
             <div className="linkdiv steamlinkdiv">
-                <p>Steam</p>
+              <img className="steamlogo" src={steamLogo} alt="Steam logo"/>
+              <p>Steam</p>
             </div>
           </a>
           <a className="discordlink" href={discordLink}>
             <div className="linkdiv discordlinkdiv">
               <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
-                <p>Join the Discord!</p>
+              <p>Join the Discord!</p>
             </div>
           </a>
           <a className="youtubelink" href={youtubeLink}>
             <div className="linkdiv youtubelinkdiv">
               <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
-                <p>Video tour</p>
+              <p>Video tour</p>
             </div>
           </a>
           <a className="twitchlink" href={twitchLink}>
             <div className="linkdiv twitchlinkdiv">
               <img className="twitchlogo" src={twitchLogo} alt="Twitch logo"/>
-                <p>Twitch</p>
+              <p>Twitch</p>
             </div>
           </a>
         </div>
