@@ -13,12 +13,12 @@ header {
   margin: 20px auto;
 }
 
-body {
-  margin: 0 3%;
+.wordmark {
+  width: 90%;
 }
 
-header h1 {
-  font-size: 3rem;
+body {
+  margin: 0 3%;
 }
 
 .app {

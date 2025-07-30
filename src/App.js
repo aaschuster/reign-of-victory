@@ -7,6 +7,10 @@ import youtubeLogo from "./youtube.png"
 import twitchLogo from "./twitch.png"
 import steamLogo from "./steam.png"
 
+import wordmark from "./wordmark.png"
+import banner from "./banner.png"
+import king from "./king.png"
+
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
 const youtubeLink = "https://youtu.be/e_8MWue2tCs";
 const twitchLink = "https://m.twitch.tv/reignofvictorygaming/home?tt_content=channel&tt_medium=mobile_web_share";
@@ -23,7 +27,7 @@ function App() {
   return (
       <div className="app">
         <header>
-          <h1>Reign of Victory</h1>
+          <img className="wordmark" src={wordmark} alt="Reign of Victory wordmark"/>
         </header>
         <div className="links">
           <a className="steamlink" href={steamLink}>
