@@ -12,7 +12,7 @@ import banner from "./banner.png"
 import king from "./king.png"
 
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
-const youtubeLink = "https://youtu.be/e_8MWue2tCs";
+const youtubeLink = "https://youtu.be/fB9uTvCWwlw";
 const twitchLink = "https://m.twitch.tv/reignofvictorygaming/home?tt_content=channel&tt_medium=mobile_web_share";
 const steamLink = "https://store.steampowered.com/app/3890650/Reign_of_Victory/?beta=0";
 
@@ -46,7 +46,7 @@ function App() {
           <a className="youtubelink" href={youtubeLink}>
             <div className="linkdiv youtubelinkdiv">
               <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
-              <p>Video tour</p>
+              <p>Trailer</p>
             </div>
           </a>
           <a className="twitchlink" href={twitchLink}>
