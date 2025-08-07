@@ -34,7 +34,7 @@ function App() {
           <a className="steamlink" href={steamLink}>
             <div className="linkdiv steamlinkdiv">
               <img className="steamlogo" src={steamLogo} alt="Steam logo"/>
-              <p>Steam</p>
+              <p>Wishlist Now!</p>
             </div>
           </a>
           <a className="discordlink" href={discordLink}>

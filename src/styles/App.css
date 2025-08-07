@@ -36,25 +36,36 @@ header {
 }
 
 .links {
-  margin: 0 20px;
+  margin: 0 15px;
+  margin-bottom: 10px;
+  max-width: 410px;
+  width: 95%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
 }
 
 .links a {
-  border-radius: 7px;
+  border-radius: 14px;
   padding: 18px;
   text-decoration: none;
   margin: 7px;
   font-size: 1.3rem;
-  width: 100%;
-  height: 55px;
   color: white;
   background-color: black;
   display: flex;
+}
+
+.discordlink, .youtubelink, .twitchlink {
+  width: 75%;
+  max-width: 270px;
+  height: 45px;
+}
+
+.steamlink {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .linkdiv {
@@ -70,6 +81,10 @@ header {
 
 .linkdiv p {
   width: 100%;
+}
+
+.steamlinkdiv p {
+  font-size: 1.9rem;
 }
 
 .discordlogo {
