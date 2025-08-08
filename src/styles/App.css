@@ -58,6 +58,11 @@ header {
   color: white;
   background-color: black;
   display: flex;
+  opacity: 67%;
+}
+
+.links a:hover {
+  opacity: 80%;
 }
 
 .discordlink, .youtubelink, .twitchlink {
