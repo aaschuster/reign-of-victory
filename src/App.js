@@ -47,7 +47,9 @@ function App() {
             <p>{infoText}</p>
           </div>
           <div className="links">
-            <h2>Socials</h2>
+            <div className="socialstitle">
+              <h2>Socials</h2>
+            </div>
             <a className="steamlink" href={steamLink}>
               <div className="linkdiv steamlinkdiv">
                 <img className="steamlogo" src={steamLogo} alt="Steam logo"/>

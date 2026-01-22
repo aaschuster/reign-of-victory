@@ -25,6 +25,11 @@ header {
   margin-top: 10px;
 }
 
+h2 {
+  font-size: 2.4rem;
+  font-family: "Tagesschrift";
+}
+
 .king {
   width: 90%;
   max-width: 350px;
@@ -67,9 +72,7 @@ header {
 
 .info h2 {
   margin-bottom: 15px;
-  font-family: "Tagesschrift";
   opacity: 80%;
-  font-size: 1.9rem;
 }
 
 .links {
@@ -83,7 +86,7 @@ header {
   align-items: center;
 }
 
-.links a {
+.links a, .socialstitle {
   border-radius: 14px;
   padding: 15px;
   text-decoration: none;
@@ -91,15 +94,25 @@ header {
   font-size: 1.3rem;
   color: white;
   background-color: black;
+}
+
+.links a {
   display: flex;
   opacity: 80%;
 }
 
 .links a:hover {
-  opacity: 95%;
+  opacity: 85%;
 }
 
-.steamlink, .discordlink, .youtubelink, .twitchlink, .fblink, .xlink, .blueskylink, .redditlink, .tiktoklink {
+.socialstitle {
+  opacity: 87%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steamlink, .discordlink, .youtubelink, .twitchlink, .fblink, .xlink, .blueskylink, .redditlink, .tiktoklink, .socialstitle {
   width: 100%;
   max-width: 270px;
   height: 45px;
