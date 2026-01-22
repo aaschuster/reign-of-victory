@@ -40,6 +40,12 @@ function App() {
         <header>
           <img className="wordmark" src={wordmark} alt="Reign of Victory wordmark"/>
         </header>
+        <a className="wishlistlink link">
+          <div className="linkdiv wishlistlinkdiv">
+            <img className="steamlogo" src={steamLogo} alt="Steam logo"/>
+            <p>Wishlist Now!</p>
+          </div>
+        </a>
         <div className="info-links">
           <div className="info">
             <img className="king" src={king} alt="Regal King with a golden crown sitting on a large ornate throne"/>
@@ -50,49 +56,49 @@ function App() {
             <div className="socialstitle">
               <h2>Socials</h2>
             </div>
-            <a className="steamlink" href={steamLink}>
+            <a className="steamlink link" href={steamLink}>
               <div className="linkdiv steamlinkdiv">
                 <img className="steamlogo" src={steamLogo} alt="Steam logo"/>
                 <p>Steam</p>
               </div>
             </a>
-            <a className="discordlink" href={discordLink}>
+            <a className="discordlink link" href={discordLink}>
               <div className="linkdiv discordlinkdiv">
                 <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
                 <p>Discord</p>
               </div>
             </a>
-            <a className="fblink" href={fbLink}>
+            <a className="fblink link" href={fbLink}>
               <div className="linkdiv fblinkdiv">
                 <img className="fblogo" src={fbLogo} alt="Facebook logo"/>
                 <p>Facebook</p>
               </div>
             </a>
-            <a className="xlink" href={xLink}>
+            <a className="xlink link" href={xLink}>
               <div className="linkdiv xlinkdiv">
                 <img className="xlogo" src={xLogo} alt="X logo"/>
                 <p>X</p>
               </div>
             </a>
-            <a className="blueskylink" href={blueskyLink}>
+            <a className="blueskylink link" href={blueskyLink}>
               <div className="linkdiv blueskylinkdiv">
                 <img className="blueskylogo" src={blueskyLogo} alt="BlueSky logo"/>
                 <p>BlueSky</p>
               </div>
             </a>
-            <a className="redditlink" href={redditLink}>
+            <a className="redditlink link" href={redditLink}>
               <div className="linkdiv redditlinkdiv">
                 <img className="redditlogo" src={redditLogo} alt="Reddit logo"/>
                 <p>Reddit</p>
               </div>
             </a>
-            <a className="tiktoklink" href={tiktokLink}>
+            <a className="tiktoklink link" href={tiktokLink}>
               <div className="linkdiv tiktoklinkdiv">
                 <img className="tiktoklogo" src={tiktokLogo} alt="TikTok logo"/>
                 <p>Tiktok</p>
               </div>
             </a>
-            <a className="youtubelink" href={youtubeLink}>
+            <a className="youtubelink link" href={youtubeLink}>
               <div className="linkdiv youtubelinkdiv">
                 <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
                 <p>YouTube</p>
