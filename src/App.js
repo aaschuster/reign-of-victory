@@ -40,64 +40,63 @@ function App() {
         <header>
           <img className="wordmark" src={wordmark} alt="Reign of Victory wordmark"/>
         </header>
-        <div className="info">
-          <img className="king" src={king} alt="Regal King with a golden crown sitting on a large ornate throne"/>
-          <p>{infoText}</p>
-        </div>
-        <div className="links">
-          <a className="steamlink" href={steamLink}>
-            <div className="linkdiv steamlinkdiv">
-              <img className="steamlogo" src={steamLogo} alt="Steam logo"/>
-              <p>Wishlist Now!</p>
-            </div>
-          </a>
-          <a className="fblink" href={fbLink}>
-            <div className="linkdiv fblinkdiv">
-              <img className="fblogo" src={fbLogo} alt="Facebook logo"/>
-              <p>Facebook</p>
-            </div>
-          </a>
-          <a className="xLink" href={xLink}>
-            <div className="linkdiv xlinkdiv">
-              <img className="xlogo" src={xLogo} alt="X logo"/>
-            </div>
-          </a>
-          <a className="blueskylink" href={blueskyLink}>
-            <div className="linkdiv blueskylinkdiv">
-              <img className="blueskylogo" src={blueskyLogo} alt="BlueSky logo"/>
-              <p>BlueSky</p>
-            </div>
-          </a>
-          <a className="redditlink" href={redditLink}>
-            <div className="linkdiv redditlinkdiv">
-              <img className="redditlogo" src={redditLogo} alt="Reddit logo"/>
-              <p>Reddit</p>
-            </div>
-          </a>
-          <a className="tiktoklink" href={tiktokLink}>
-            <div className="linkdiv tiktoklinkdiv">
-              <img className="tiktoklogo" src={tiktokLogo} alt="TikTok logo"/>
-              <p>Tiktok</p>
-            </div>
-          </a>
-          <a className="discordlink" href={discordLink}>
-            <div className="linkdiv discordlinkdiv">
-              <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
-              <p>Discord</p>
-            </div>
-          </a>
-          <a className="youtubelink" href={youtubeLink}>
-            <div className="linkdiv youtubelinkdiv">
-              <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
-              <p>YouTube</p>
-            </div>
-          </a>
-          <a className="twitchlink" href={twitchLink}>
-            <div className="linkdiv twitchlinkdiv">
-              <img className="twitchlogo" src={twitchLogo} alt="Twitch logo"/>
-              <p>Twitch</p>
-            </div>
-          </a>
+        <div className="info-links">
+          <div className="info">
+            <img className="king" src={king} alt="Regal King with a golden crown sitting on a large ornate throne"/>
+            <h2>About Reign of Victory</h2>
+            <p>{infoText}</p>
+          </div>
+          <div className="links">
+            <h2>Socials</h2>
+            <a className="steamlink" href={steamLink}>
+              <div className="linkdiv steamlinkdiv">
+                <img className="steamlogo" src={steamLogo} alt="Steam logo"/>
+                <p>Steam</p>
+              </div>
+            </a>
+            <a className="discordlink" href={discordLink}>
+              <div className="linkdiv discordlinkdiv">
+                <img className="discordlogo" src={discordLogo} alt="Discord logo"/>
+                <p>Discord</p>
+              </div>
+            </a>
+            <a className="fblink" href={fbLink}>
+              <div className="linkdiv fblinkdiv">
+                <img className="fblogo" src={fbLogo} alt="Facebook logo"/>
+                <p>Facebook</p>
+              </div>
+            </a>
+            <a className="xlink" href={xLink}>
+              <div className="linkdiv xlinkdiv">
+                <img className="xlogo" src={xLogo} alt="X logo"/>
+                <p>X</p>
+              </div>
+            </a>
+            <a className="blueskylink" href={blueskyLink}>
+              <div className="linkdiv blueskylinkdiv">
+                <img className="blueskylogo" src={blueskyLogo} alt="BlueSky logo"/>
+                <p>BlueSky</p>
+              </div>
+            </a>
+            <a className="redditlink" href={redditLink}>
+              <div className="linkdiv redditlinkdiv">
+                <img className="redditlogo" src={redditLogo} alt="Reddit logo"/>
+                <p>Reddit</p>
+              </div>
+            </a>
+            <a className="tiktoklink" href={tiktokLink}>
+              <div className="linkdiv tiktoklinkdiv">
+                <img className="tiktoklogo" src={tiktokLogo} alt="TikTok logo"/>
+                <p>Tiktok</p>
+              </div>
+            </a>
+            <a className="youtubelink" href={youtubeLink}>
+              <div className="linkdiv youtubelinkdiv">
+                <img className="youtubelogo" src={youtubeLogo} alt="YouTube logo"/>
+                <p>YouTube</p>
+              </div>
+            </a>
+          </div>
         </div>
         {/* <form className="emailsignupform">
           <label>Sign up for email updates:</label>

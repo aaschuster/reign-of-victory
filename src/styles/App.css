@@ -1,12 +1,18 @@
 @import "reset.css";
 
+/*title Tagesschrift*/
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap'); 
+/*general use Alegreya*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Tagesschrift&display=swap');
+
+
 #root {
   min-height: 100vh;
 }
 
 body {
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
+  font-family: 'Alegreya', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
   min-height: 100vh;
 }
 
@@ -20,9 +26,9 @@ header {
 }
 
 .king {
-  width: 70%;
-  max-width: 250px;
-  margin: 10px;
+  width: 90%;
+  max-width: 350px;
+  margin-bottom: 15px;
 }
 
 .wordmark {
@@ -39,15 +45,31 @@ header {
   background-size: cover;
 }
 
+.info-links {
+  display: flex;
+
+}
+
 .info {
-  border-radius: 14px;
+  border-radius: 40px;
   background-color: black;
   color: white;
   background:rgba(0,0,0,0.75);
+  padding: 3%;
+  font-size: 1.3rem;
+  margin: 2%;
+  height: min-content;
 }
 
 .info p { 
-  opacity: 75%;
+  opacity: 80%;
+}
+
+.info h2 {
+  margin-bottom: 15px;
+  font-family: "Tagesschrift";
+  opacity: 80%;
+  font-size: 1.9rem;
 }
 
 .links {
@@ -63,29 +85,24 @@ header {
 
 .links a {
   border-radius: 14px;
-  padding: 18px;
+  padding: 15px;
   text-decoration: none;
-  margin: 7px;
-  font-size: 1.1rem;
+  margin: 3px;
+  font-size: 1.3rem;
   color: white;
   background-color: black;
   display: flex;
-  opacity: 67%;
-}
-
-.links a:hover {
   opacity: 80%;
 }
 
-.discordlink, .youtubelink, .twitchlink {
-  width: 75%;
-  max-width: 270px;
-  height: 45px;
+.links a:hover {
+  opacity: 95%;
 }
 
-.steamlink {
+.steamlink, .discordlink, .youtubelink, .twitchlink, .fblink, .xlink, .blueskylink, .redditlink, .tiktoklink {
   width: 100%;
-  box-sizing: border-box;
+  max-width: 270px;
+  height: 45px;
 }
 
 .linkdiv {
@@ -101,10 +118,6 @@ header {
 
 .linkdiv p {
   width: 100%;
-}
-
-.steamlinkdiv p {
-  font-size: 1.5rem;
 }
 
 .discordlogo {
