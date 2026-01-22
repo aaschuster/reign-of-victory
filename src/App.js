@@ -4,13 +4,17 @@ import './styles/App.css';
 
 import discordLogo from "./discord.png"
 import youtubeLogo from "./youtube.png"
-import twitchLogo from "./twitch.png"
 import steamLogo from "./steam.png"
 import fbLogo from "./facebook.png"
 import xLogo from "./x.png"
 import blueskyLogo from "./bluesky.png"
 import redditLogo from "./reddit.png"
 import tiktokLogo from "./tiktok.png"
+
+import screenshot1 from "./screenshots/screenshot1.png"
+import screenshot2 from "./screenshots/screenshot2.png"
+import screenshot3 from "./screenshots/screenshot3.png"
+import screenshot4 from "./screenshots/screenshot4.png"
 
 import wordmark from "./wordmark.png"
 import banner from "./banner.png"
@@ -43,9 +47,15 @@ function App() {
         <a className="wishlistlink link">
           <div className="linkdiv wishlistlinkdiv">
             <img className="steamlogo" src={steamLogo} alt="Steam logo"/>
-            <p>Wishlist Now!</p>
+            <h2>Wishlist Now!</h2>
           </div>
         </a>
+        <div className="gallery">
+          <img src={screenshot1}/>
+          <img src={screenshot2}/>
+          <img src={screenshot3}/>
+          <img src={screenshot4}/>
+        </div>
         <div className="info-links">
           <div className="info">
             <img className="king" src={king} alt="Regal King with a golden crown sitting on a large ornate throne"/>

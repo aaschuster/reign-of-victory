@@ -41,6 +41,9 @@ h2 {
   max-height: 110px;
 }
 
+.wishlistlink p {
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -48,6 +51,17 @@ h2 {
   width: 100%;
   min-height: 100vh;
   background-size: cover;
+}
+
+.gallery {
+  display: flex;
+  margin: 20px 0 20px 0;
+}
+
+.gallery img {
+  width: calc(25% - 10px);
+  margin: 5px;
+  border-radius: 14px;
 }
 
 .info-links {
