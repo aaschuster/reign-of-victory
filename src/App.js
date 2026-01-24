@@ -69,8 +69,10 @@ function App() {
         <div className="info-links">
           <div className="info">
             <img className="king" src={king} alt="Regal King with a golden crown sitting on a large ornate throne"/>
-            <h2>About Reign of Victory</h2>
-            <p>{infoText}</p>
+            <div className="infotext">
+              <h2>About Reign of Victory</h2>
+              <p>{infoText}</p>
+            </div>
           </div>
           <div className="links">
             <div className="socialstitle">
