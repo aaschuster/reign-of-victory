@@ -1,5 +1,7 @@
 @import "reset.css";
 
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 /*title Tagesschrift*/
 @import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap'); 
 /*general use Alegreya*/
@@ -14,6 +16,7 @@ body {
   text-align: center;
   font-family: 'Alegreya', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', "Geneva", Verdana, sans-serif;
   min-height: 100vh;
+  font-size: 1.3rem;
 }
 
 header {
@@ -38,10 +41,7 @@ h2 {
 
 .wordmark {
   width: 100%;
-  max-height: 110px;
-}
-
-.wishlistlink p {
+  max-height: 150px;
 }
 
 .app {
@@ -53,21 +53,22 @@ h2 {
   background-size: cover;
 }
 
-.gallery {
-  display: flex;
-  margin: 20px 0 20px 0;
+.image-gallery {
+  width: 95%;
+  max-width: 1000px;
+  margin-top: 15px;
 }
 
-.gallery img {
-  width: calc(25% - 10px);
-  margin: 5px;
+.image-gallery-image {
   border-radius: 14px;
 }
 
 .info-links {
   display: flex;
-
+  margin: 0 1% 0 1%;
+  align-items: center;
 }
+
 
 .info {
   border-radius: 40px;
@@ -75,8 +76,7 @@ h2 {
   color: white;
   background:rgba(0,0,0,0.75);
   padding: 3%;
-  font-size: 1.3rem;
-  margin: 2%;
+  margin-right: 1%;
   height: min-content;
 }
 
@@ -90,8 +90,7 @@ h2 {
 }
 
 .links {
-  margin: 0 15px;
-  margin-bottom: 10px;
+  margin: 20px 2%;
   max-width: 410px;
   width: 95%;
   display: flex;
@@ -105,7 +104,6 @@ h2 {
   padding: 15px;
   text-decoration: none;
   margin: 3px;
-  font-size: 1.3rem;
   color: white;
   background-color: black;
 }
@@ -128,7 +126,7 @@ h2 {
 
 .steamlink, .discordlink, .youtubelink, .twitchlink, .fblink, .xlink, .blueskylink, .redditlink, .tiktoklink, .socialstitle {
   width: 100%;
-  max-width: 270px;
+  max-width: 550px;
   height: 45px;
 }
 
@@ -189,3 +187,46 @@ h2 {
   max-width: 250px;
 }
 
+@media (max-width: 750px) {
+  .socialstitle {
+    display: none;
+  }
+  .links {
+    width: min-content;
+    margin: 10px 0;
+  }
+  .link p {
+    display: none;
+  }
+  .links .link {
+    width: min-content;
+  }
+  .links .link img {
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  .wishlistlink img {
+    height: 3rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 650px) {
+    h2 {
+      font-size: 1.3rem;
+    }
+    .wishlistlink img {
+      height: 2.5rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h2 {font-size: 1.1rem;}
+    .wishlistlink img {
+      height: 2.2rem;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ImageGallery from "react-image-gallery";
 
 import './styles/App.css';
 
@@ -19,6 +20,13 @@ import screenshot4 from "./screenshots/screenshot4.png"
 import wordmark from "./wordmark.png"
 import banner from "./banner.png"
 import king from "./king.png"
+
+const screenshots = [
+  {original: screenshot1},
+  {original: screenshot2},
+  {original: screenshot3},
+  {original: screenshot4}
+]
 
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
 const youtubeLink = "https://www.youtube.com/@reignofvictory";
@@ -50,12 +58,14 @@ function App() {
             <h2>Wishlist Now!</h2>
           </div>
         </a>
-        <div className="gallery">
-          <img src={screenshot1}/>
-          <img src={screenshot2}/>
-          <img src={screenshot3}/>
-          <img src={screenshot4}/>
-        </div>
+        <ImageGallery 
+          className="gallery"
+          items={screenshots}
+          autoPlay={true}
+          showBullets={true}
+          slideDuration={300}
+          slideInterval={7000}
+        />
         <div className="info-links">
           <div className="info">
             <img className="king" src={king} alt="Regal King with a golden crown sitting on a large ornate throne"/>
