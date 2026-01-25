@@ -7,6 +7,12 @@
 /*general use Alegreya*/
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Tagesschrift&display=swap');
 
+:root {
+  --border-radius: 15px;
+  --light-opacity: 85%;
+  --dark-opacity: 92%;
+}
+
 
 #root {
   min-height: 100vh;
@@ -63,32 +69,33 @@ h3 {
   width: 95%;
   max-width: 1000px;
   margin-top: 15px;
+  border-radius: var(--border-radius);
 }
 
 .image-gallery-image {
-  border-radius: 14px;
-}
+  border-radius: var(--border-radius);
+} 
 
 .info-links {
   display: flex;
   margin: 2% 5%;
   width: 95%;
   max-width: 950px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right:1%;
+  margin-right: 5px;
 }
 
 .about {
-  border-radius: 40px;
+  border-radius: var(--border-radius);
   background-color: black;
   color: white;
-  background:rgba(0,0,0,0.75);
+  background:rgba(0,0,0,var(--dark-opacity));
   padding: 5% 3%;
   display: flex;
   flex-direction: column;
@@ -98,23 +105,25 @@ h3 {
   margin-bottom: 7px;
 }
 
-.about p  {
-  opacity: 80%;
-}
-
 .about h2 {
   margin-bottom: 15px;
-  opacity: 80%;
 }
 
 .contact {
-  opacity: 80%;
+  opacity: var(--light-opacity);
   word-wrap:break-word;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h3 {
+  margin-bottom: 10px;
 }
 
 .presskit, .contact {
-  max-width: 300px;
-  width: 80%;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .presskit h4 {
@@ -125,10 +134,10 @@ h3 {
 
 .links {
   margin: 0 2%;
-  max-width: 410px;
+  max-width: 230px;
   width: 95%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
 }
@@ -139,7 +148,7 @@ h3 {
 }
 
 .link, .socialstitle, .contact {
-  border-radius: 14px;
+  border-radius: var(--border-radius);
   padding: 15px;
   text-decoration: none;
   margin: 3px;
@@ -151,17 +160,21 @@ h3 {
   height: 45px;
 }
 
+.presskit {
+  height: 75px;
+}
+
 .link {
   display: flex;
-  opacity: 80%;
+  opacity: var(--light-opacity);
 }
 
 .link:hover {
-  opacity: 85%;
+  opacity: var(--dark-opacity);
 }
 
 .socialstitle {
-  opacity: 87%;
+  opacity: var(--dark-opacity);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,7 +218,7 @@ h3 {
   }
   .links {
     width: min-content;
-    margin: 10px 0;
+    margin: 0;
   }
   .links p {
     display: none;
@@ -244,7 +257,6 @@ h3 {
   }
 
   @media (max-width: 450px) {
-    .contact {width: 170px}
-    .presskit {width: 170px}
+    .contact p {width: 170px}
   }
 }
