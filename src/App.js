@@ -19,7 +19,6 @@ import screenshot3 from "./screenshots/screenshot3.png"
 import screenshot4 from "./screenshots/screenshot4.png"
 
 import wordmark from "./wordmark.png"
-import banner from "./banner.png"
 import king from "./king.png"
 
 const screenshots = [
@@ -51,10 +50,7 @@ function App() {
   }
 
   return (
-      <div className="app" style={{
-        backgroundImage: `url(${banner})`
-        , "box-shadow": "inset 0 0 0 1000px rgba(0,0,0,.4)"
-      }}>
+      <div className="app">
         <header>
           <img className="wordmark" src={wordmark} alt="Reign of Victory wordmark"/>
         </header>
