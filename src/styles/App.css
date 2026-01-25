@@ -84,7 +84,6 @@ h3 {
 }
 
 .about {
-  box-sizing: border-box;
   border-radius: 40px;
   background-color: black;
   color: white;
@@ -95,6 +94,7 @@ h3 {
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
+  margin-bottom: 7px;
 }
 
 .about p  {
@@ -108,13 +108,12 @@ h3 {
 
 .contact {
   opacity: 80%;
-  max-width: 300px;
-  width: 100%;
+  word-wrap:break-word;
 }
 
-.presskit {
+.presskit, .contact {
   max-width: 300px;
-  width: 100%;
+  width: 80%;
 }
 
 .presskit h4 {
@@ -241,5 +240,10 @@ h3 {
     .wishlistlink img {
       height: 2.2rem;
     }
+  }
+
+  @media (max-width: 450px) {
+    .contact {width: 170px}
+    .presskit {width: 170px}
   }
 }
