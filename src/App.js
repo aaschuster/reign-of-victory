@@ -88,7 +88,7 @@ function App() {
             <a className="presskit link" href={presskitLink}>
                 <div className="linkdiv presskitlinkdiv">
                   <img className="drivelogo logo" src={driveLogo} alt="Google Drive logo"/>
-                  <p>Press Kit</p>
+                  <h4>Press Kit</h4>
                 </div>
             </a> 
           </div>          

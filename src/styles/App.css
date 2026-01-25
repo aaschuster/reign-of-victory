@@ -70,8 +70,8 @@ h3 {
 
 .info-links {
   display: flex;
-  margin: 2% 1%;
-  width: 100%;
+  margin: 2% 5%;
+  width: 95%;
   max-width: 950px;
   align-items: flex-start;
 }
@@ -84,11 +84,12 @@ h3 {
 }
 
 .about {
+  box-sizing: border-box;
   border-radius: 40px;
   background-color: black;
   color: white;
   background:rgba(0,0,0,0.75);
-  padding: 1% 1%;
+  padding: 5% 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,6 +115,12 @@ h3 {
 .presskit {
   max-width: 300px;
   width: 100%;
+}
+
+.presskit h4 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
 }
 
 .links {
@@ -229,6 +236,8 @@ h3 {
     .wishlistlink h2 {font-size: 1.1rem;}
     .info h2 {font-size: 1.5rem;}
     .info p {font-size: 1.2rem;}
+    .info h3 {font-size: 1.45rem;}    
+    .presskit h4 {font-size: 1.4rem;}
     .wishlistlink img {
       height: 2.2rem;
     }
