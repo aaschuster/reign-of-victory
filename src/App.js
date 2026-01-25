@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import ImageGallery from "react-image-gallery";
 
 import './styles/App.css';
@@ -30,7 +29,6 @@ const screenshots = [
 
 const discordLink = "https://discord.com/invite/rEWtzeQzNu";
 const youtubeLink = "https://www.youtube.com/@reignofvictory";
-const twitchLink = "https://m.twitch.tv/reignofvictorygaming/home?tt_content=channel&tt_medium=mobile_web_share";
 const steamLink = "https://store.steampowered.com/app/3890650/Reign_of_Victory/?beta=0";
 const fbLink = "https://www.facebook.com/people/Reign-of-Victory/61581087128167/";
 const xLink = "https://x.com/reign_ofvictory";
@@ -38,23 +36,22 @@ const blueskyLink = "https://bsky.app/profile/reignofvictory.bsky.social";
 const tiktokLink = "https://www.tiktok.com/@reign_of_victory";
 const redditLink ="https://www.reddit.com/r/ReignofVictory/";
 const presskitLink = "https://drive.google.com/drive/folders/1GQ_QkLdxIjPuU0_SRJUTXTn7QObsjtw0?usp=sharing";
-const contactLink = "benjaminjoelschuster@gmail.com"
 const infoText = "Build and trade, fight and conquer or road and steal in this multiplayer open-world RPG where you can choose your own adventure by taking part as a villager, knight or outlaw to become the victor!"
 
 function App() {
 
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
 
-  function onChange(evt) {
-    setEmail(evt.target.value);
-  }
+  // function onChange(evt) {
+  //   setEmail(evt.target.value);
+  // }
 
   return (
       <div className="app">
         <header>
           <img className="wordmark" src={wordmark} alt="Reign of Victory wordmark"/>
         </header>
-        <a className="wishlistlink link">
+        <a className="wishlistlink link" href={steamLink}>
           <div className="linkdiv wishlistlinkdiv">
             <img className="steamlogo logo" src={steamLogo} alt="Steam logo"/>
             <h2>Wishlist Now!</h2>
