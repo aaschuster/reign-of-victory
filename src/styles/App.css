@@ -196,15 +196,16 @@ h3 {
 }
 
 .logo {
-  height: 3rem;
+  height: 3.2rem;
 }
 
 .discordlogo {height: 2.3rem;}
-.youtubelogo {height: 2.8rem;}
+.youtubelogo {height: 2.1rem;}
 .twitchlogo {height: 3.2rem;}
 .steamlogo {height: 3.3rem;}
 .blueskylogo {height: 2.5rem;}
 .redditlogo {height: 3rem;}
+.tiktoklogo {height:3rem;}
 
 .emailsignupform input {
   margin-left: 5px;
