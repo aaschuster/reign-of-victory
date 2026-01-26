@@ -70,7 +70,7 @@ function App() {
             <div className="about">
               <img className="king" src={king} alt="Regal King with a golden crown sitting on a large ornate throne"/>
               <div className="infotext">
-                <h2>About Reign of Victory</h2>
+                <h2>About</h2>
                 <p>{infoText}</p>
               </div>
             </div>
