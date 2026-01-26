@@ -10,7 +10,7 @@ import xLogo from "./logos/x.png"
 import blueskyLogo from "./logos/bluesky.png"
 import redditLogo from "./logos/reddit.png"
 import tiktokLogo from "./logos/tiktok.png"
-import driveLogo from "./logos/drive.png"
+import rovLogo from "./logos/rovLogo.png"
 
 import screenshot1 from "./screenshots/screenshot1.png"
 import screenshot2 from "./screenshots/screenshot2.png"
@@ -80,13 +80,13 @@ function App() {
             </div>
             <a className="presskit link" href={presskitLink}>
                 <div className="linkdiv presskitlinkdiv">
-                  <img className="drivelogo logo" src={driveLogo} alt="Google Drive logo"/>
                   <h4>Press Kit</h4>
                 </div>
             </a> 
           </div>          
           <div className="links">
             <div className="socialstitle">
+              <img className="rovlogo logo" src={rovLogo} alt="Reign of Victory icon"/> 
               <h2>Socials</h2>
             </div>
             <a className="steamlink link" href={steamLink}>

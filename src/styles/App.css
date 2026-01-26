@@ -124,6 +124,7 @@ h3 {
 .presskit, .contact {
   box-sizing: border-box;
   width: 100%;
+  max-width: 325px;
 }
 
 .presskit h4 {
@@ -180,7 +181,7 @@ h3 {
   align-items: center;
 }
 
-.linkdiv {
+.linkdiv, .socialstitle {
   display: flex;
   align-items: center;
   vertical-align: middle;
@@ -191,7 +192,7 @@ h3 {
   margin-right: 13px;
 }
 
-.linkdiv p {
+.linkdiv p, .socialstitle h2 {
   width: 100%;
 }
 
