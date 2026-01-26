@@ -37,6 +37,7 @@ const tiktokLink = "https://www.tiktok.com/@reign_of_victory";
 const redditLink ="https://www.reddit.com/r/ReignofVictory/";
 const presskitLink = "https://drive.google.com/drive/folders/1GQ_QkLdxIjPuU0_SRJUTXTn7QObsjtw0?usp=sharing";
 const infoText = "Build and trade, fight and conquer or road and steal in this multiplayer open-world RPG where you can choose your own adventure by taking part as a villager, knight or outlaw to become the victor!"
+const email = "benajminjoelschuster@gmail.com";
 
 function App() {
 
@@ -74,10 +75,10 @@ function App() {
                 <p>{infoText}</p>
               </div>
             </div>
-            <div className="contact">
+            <a className="contact" href={`mailto:${email}`}>
               <h3>Contact Me</h3>
-              <p>benjaminjoelschuster@gmail.com</p>
-            </div>
+              <p>{email}</p>
+            </a>
             <a className="presskit link" href={presskitLink}>
                 <div className="linkdiv presskitlinkdiv">
                   <h4>Press Kit</h4>

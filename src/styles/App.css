@@ -169,7 +169,7 @@ h3 {
   opacity: var(--light-opacity);
 }
 
-.link:hover {
+.link:hover, .contact:hover {
   opacity: var(--dark-opacity);
 }
 
