@@ -87,7 +87,6 @@ h3 {
 .info {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-right: 5px;
 }
 
@@ -124,13 +123,13 @@ h3 {
 .presskit, .contact {
   box-sizing: border-box;
   width: 100%;
-  max-width: 325px;
 }
 
 .presskit h4 {
   text-align: center;
   width: 100%;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 .links {
@@ -247,11 +246,10 @@ h3 {
   }
 
   @media (max-width: 500px) {
-    .wishlistlink h2 {font-size: 1.1rem;}
-    .info h2 {font-size: 1.5rem;}
+    .wishlistlink h2, h2, h3, .presskit h4 {
+      font-size: 1.5rem
+    }
     .info p {font-size: 1.2rem;}
-    .info h3 {font-size: 1.45rem;}    
-    .presskit h4 {font-size: 1.4rem;}
     .wishlistlink img {
       height: 2.2rem;
     }
