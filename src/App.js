@@ -36,7 +36,7 @@ const blueskyLink = "https://bsky.app/profile/reignofvictory.bsky.social";
 const tiktokLink = "https://www.tiktok.com/@reign_of_victory";
 const redditLink ="https://www.reddit.com/r/ReignofVictory/";
 const presskitLink = "https://drive.google.com/drive/folders/1GQ_QkLdxIjPuU0_SRJUTXTn7QObsjtw0?usp=sharing";
-const infoText = "Build and trade, fight and conquer or road and steal in this multiplayer open-world RPG where you can choose your own adventure by taking part as a villager, knight or outlaw to become the victor!"
+const infoText = "Build and trade, fight and conquer or raid and steal in this multiplayer open-world RPG where you can choose your own adventure by taking part as a villager, knight or outlaw to become the victor!"
 
 function App() {
 
