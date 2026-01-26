@@ -12,10 +12,10 @@ import redditLogo from "./logos/reddit.png"
 import tiktokLogo from "./logos/tiktok.png"
 import rovLogo from "./logos/rovLogo.png"
 
-import screenshot1 from "./screenshots/screenshot1.png"
-import screenshot2 from "./screenshots/screenshot2.png"
-import screenshot3 from "./screenshots/screenshot3.png"
-import screenshot4 from "./screenshots/screenshot4.png"
+import screenshot1 from "./screenshots/screenshot1.jpg"
+import screenshot2 from "./screenshots/screenshot2.jpg"
+import screenshot3 from "./screenshots/screenshot3.jpg"
+import screenshot4 from "./screenshots/screenshot4.jpg"
 
 import wordmark from "./wordmark.png"
 import king from "./king.png"
@@ -37,6 +37,10 @@ const tiktokLink = "https://www.tiktok.com/@reign_of_victory";
 const redditLink ="https://www.reddit.com/r/ReignofVictory/";
 const presskitLink = "https://drive.google.com/drive/folders/1GQ_QkLdxIjPuU0_SRJUTXTn7QObsjtw0?usp=sharing";
 const infoText = "Build and trade, fight and conquer or raid and steal in this multiplayer open-world RPG where you can choose your own adventure by taking part as a villager, knight or outlaw to become the victor!"
+<<<<<<< HEAD
+=======
+const email = "benajminjoelschuster@gmail.com";
+>>>>>>> optimize-images
 
 function App() {
 
@@ -74,10 +78,10 @@ function App() {
                 <p>{infoText}</p>
               </div>
             </div>
-            <div className="contact">
+            <a className="contact" href={`mailto:${email}`}>
               <h3>Contact Me</h3>
-              <p>benjaminjoelschuster@gmail.com</p>
-            </div>
+              <p>{email}</p>
+            </a>
             <a className="presskit link" href={presskitLink}>
                 <div className="linkdiv presskitlinkdiv">
                   <h4>Press Kit</h4>
